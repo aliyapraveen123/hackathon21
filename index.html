@@ -15,27 +15,25 @@
 
         let para = document.createElement('p');
         para.textContent = "Hello World!";
-        para.style.fontSize = '30px'
+        para.style.fontSize = '30px';
         para.style.margin = '60px';
 
         let btn = document.createElement('button');
         btn.textContent = 'Change Text';
         btn.style.backgroundColor = 'black';
         btn.style.color = 'white';
-        btn.style.width = '150px'
-        btn.style.height = '30px';
+        btn.style.width = '180px';
+        btn.style.height = '60px';
         btn.style.borderRadius = '10px';
-        btn.style.margin = '10px'
+        btn.style.margin = '10px';
         btn.style.boxShadow = '0 4px 10px brown';
-        btn.style.padding = '30px'
-        btn.style.fontSize = '20px'
-        btn.style.textAlign = 'center';
+        btn.style.fontSize = '20px';
         btn.style.display = "flex";
         btn.style.justifyContent = "center"; 
         btn.style.alignItems = "center";   
+        btn.style.cursor = "pointer";
 
-      
-            btn.addEventListener('click', function (){
+        btn.addEventListener('click', function () {
             para.textContent = "Hello, JavaScript DOM!";
             para.style.fontSize = '30px';
             para.style.color = 'darkblue';
@@ -47,22 +45,20 @@
         container.appendChild(heading);
         container.appendChild(para);
         container.appendChild(btn);
+
         container.style.backgroundColor = 'lightpink';
         container.style.margin = '5px';
         container.style.padding = '5px';
         container.style.width = '50%';
         container.style.height = "500px";
         container.style.textAlign = 'center';
-        container.style.alignItems = 'center';
         container.style.display = 'flex';           
-        container.style.flexDirection = 'column'
+        container.style.flexDirection = 'column';
         container.style.position = 'absolute';
         container.style.top = '50%';
         container.style.left = '50%';
         container.style.transform = 'translate(-50%, -50%)';
         container.style.boxShadow = '0 4px 10px brown';
-
-
     </script>  
 </body>
 </html>
